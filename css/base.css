@@ -26,12 +26,12 @@ body {
 }
 
 /* Page Loader */
-.js .loading::before,
+/* .js .loading::before,
 .js .loading::after {
 	content: '';
 	position: fixed;
 	z-index: 1000;
-}
+} */
 
 .js .loading::before {
 	top: 0;
@@ -100,6 +100,7 @@ main {
 	width: 100%;
 	overflow: hidden;
 }
+
 
 .unbutton {
 	background: none;
