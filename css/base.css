@@ -836,3 +836,143 @@ body #cdawrap {
 	    justify-self: end;
 	}
 }
+
+
+#brandname {
+    width: 100%;
+    min-height: auto;
+}
+
+#navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#left {
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    width: 40%;
+    padding-left: 5vw;
+}
+
+#logo img {
+    width: 100%;
+}
+
+#right {
+    width: 60%;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: space-around;
+    font-size: small;
+}
+
+#right #home {
+    margin: 0;
+	font-size: 25px;
+	width: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+#right #home h1 {
+    margin: 0;
+	font-size: 25px;
+}
+
+#right #log{
+	width: 25%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	
+}
+#right #log h1{
+	padding: 5px 12px;
+    border: 3px solid rgb(255, 0, 0);
+    border-radius: 50px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+	background-color: rgb(255, 0, 0);
+    font-size: 25px;
+    position: relative;
+    overflow: hidden;
+}
+
+#right img{
+	display: none;
+}
+
+#right #home h1:hover {
+    color: rgb(255, 0, 0);
+	transition: all ease 0.4s;
+}
+
+#right #log h1::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+	color: rgb(255, 0, 0);
+    background-color: rgb(255, 255, 255);
+    left: 0;
+    bottom: -100%;
+    border-radius: 50%;
+    transition: all ease 0.4s;
+}
+#right #log h1:hover::after{
+    bottom: 0;
+    border-radius: 0;
+}
+#right #log h1:hover a{
+    color: rgb(255, 0, 0);
+}
+#right #log h1 a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    position: relative;
+    z-index: 9;
+}
+
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    #navbar {
+        /* flex-direction: column; */
+    }
+
+    #left, #right {
+        width: 100%;
+        justify-content: center;
+    }
+
+    #logo {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    #right {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #right #home h1 {
+		display: none;
+    }
+    #right #log h1 {
+		display: none;
+    }
+    #right img {
+        display: flex;
+		width: 25%;
+		margin-left: 25vw;
+	}
+
+}
